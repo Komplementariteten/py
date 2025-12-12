@@ -1,0 +1,50 @@
+# --- 1. Virtual Environments (Das Wichtigste!) ---
+# Ignoriert den Ordner, in dem deine Bibliotheken liegen.
+venv/
+.venv/
+env/
+.env/
+
+# --- 2. Python Bytecode & Cache ---
+# Temporäre Dateien, die Python beim Ausführen erstellt.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- 3. Umgebungs-Variablen & Secrets ---
+# WICHTIG: Passwörter/API-Keys nie committen!
+.env
+.env.local
+
+# --- 4. KI / Machine Learning Spezifisch ---
+# Verhindert, dass riesige Modelle oder Datasets hochgeladen werden.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Ordner für Daten und heruntergeladene Modelle
+data/
+models/
+checkpoints/
+runs/
+
+# Generierte Ausgaben (z.B. deine TTS Audio-Dateien)
+*.wav
+*.mp3
+output/
+results/
+
+# --- 5. IDE / Editor Einstellungen ---
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# --- 6. Logs & Fehler ---
+*.log
+pip-log.txt
